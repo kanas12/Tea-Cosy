@@ -1,0 +1,263 @@
+html,body{
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    z-index: 1;
+    background: #000;
+    cursor: pointer;
+}
+
+header img{
+    padding: 0;
+    margin-left: 10px;
+    height: 50px;
+}
+
+header nav ul li {
+    display: inline-flex;
+    padding: 10px;
+    font-weight: 600;
+    text-decoration: underline;
+    position: relative;
+    color: rgba(255,255,255,0.7);
+}
+
+header nav ul {
+    margin-right: 10px;
+}
+.hover-nav {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hover-nav:after {
+    display:block;
+    content: '';
+    border-top: solid 5px #fff;
+    transform: scaleX(0);  
+    transition: transform 350ms ease-in-out;
+    transform-origin:50% 50%;
+
+}
+.hover-nav:hover:after { 
+    transform: scaleX(1);
+    transform-origin:0% 100%;
+    border-color: bisque;
+   
+}
+
+#menu {
+    display: none;
+    position: absolute;
+}
+
+@media only screen and (max-width: 642px) {
+    #menu {
+        display: inline;
+        position: relative;
+    }
+    
+    .options {
+        display: none;
+        position: relative;
+    }
+}
+
+/* Main landing & mission statement */
+.center {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 1200px;
+    background: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.center-text {
+    width: 100%;
+    background: #000;
+    align-items: center; 
+}
+
+/* Tea of the Month */
+
+#featuredtea {
+    max-width: 1000px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+#tea-gallery {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#tea-gallery div {
+    width: 300px;
+    height: 300px; 
+    padding: 0 10px;
+}
+
+#tea-gallery img {
+    display: block;
+    height: 200px;
+    width: 300px;
+    padding: 10px 0;
+}
+
+
+
+
+
+/* Locations */
+
+#loc-header {
+    position: relative;
+    margin: 0;
+    top: 70px;
+}
+
+#locations {
+    max-width: 1200px;
+    min-height: 500px;
+    background: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg') no-repeat center;
+    background-size: cover;
+    margin: -50px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+#locations div {
+    background-color: black;
+    width: 300px;
+    opacity: 1;
+    margin: 15px 20px;
+}
+
+@media only screen and (max-width:850px) and (min-width:740px) {
+    #loc-header {
+        display: none;
+    }
+    #locations {
+        margin: 70px auto;
+
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        align-content: space-around;
+    }
+}
+
+@media only screen and (max-width:740px) {
+    #loc-header {
+        display: none;
+    }
+
+    #locations {
+        margin: 70px auto;
+
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    #locations h2,p {
+        margin: 10px 0;
+    }
+}
+
+
+/* Contact */
+.contact {
+    height: 200px;
+}
+.contact h2{
+    font-weight: 700;
+    padding: 0 20px;
+    display: inline-block;
+    margin: 0;
+    margin-top: 5px;
+    color: seashell;
+    text-decoration: none;
+    transition: ease-in-out .3s;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+} 
+
+.contact h2:hover{
+    border-color: beige;
+    padding: 0 3px;
+    color: bisque;
+    border-color: bisque;
+    
+} 
+
+.contact h5{
+    padding-top: 10px;
+}
+
+.contact h5 a{
+    color: seashell;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contact h5 a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    margin-left: 20px;
+    opacity: 1;
+    bottom: 0;
+    text-align: left;
+    min-height: 40px;
+    background-color: black;
+}
+
+footer h4 {
+    color: seashell;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
